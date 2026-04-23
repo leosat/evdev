@@ -139,6 +139,7 @@ evdev_enum!(
     KEY_DELETE = 111,
     KEY_MACRO = 112,
     KEY_MUTE = 113,
+    KEY_MIN_INTERESTING = 113,
     KEY_VOLUMEDOWN = 114,
     KEY_VOLUMEUP = 115,
     KEY_POWER = 116, /* SC System Power Down */
@@ -148,6 +149,7 @@ evdev_enum!(
     KEY_SCALE = 120, /* AL Compiz Scale (Expose) */
     KEY_KPCOMMA = 121,
     KEY_HANGEUL = 122,
+    KEY_HANGUEL = 122,
     KEY_HANJA = 123,
     KEY_YEN = 124,
     KEY_LEFTMETA = 125,
@@ -178,6 +180,7 @@ evdev_enum!(
     KEY_WWW = 150, /* AL Internet Browser */
     KEY_MSDOS = 151,
     KEY_COFFEE = 152, /* AL Terminal Lock/Screensaver */
+    KEY_SCREENLOCK = 152,
     KEY_DIRECTION = 153,
     KEY_ROTATE_DISPLAY = 153,
     KEY_CYCLEWINDOWS = 154,
@@ -225,6 +228,7 @@ evdev_enum!(
     KEY_PAUSECD = 201,
     KEY_PROG3 = 202,
     KEY_PROG4 = 203,
+    KEY_ALL_APPLICATIONS = 204,
     KEY_DASHBOARD = 204, /* AL Dashboard */
     KEY_SUSPEND = 205,
     KEY_CLOSE = 206, /* AC Close */
@@ -266,8 +270,10 @@ evdev_enum!(
     KEY_VIDEO_PREV = 242,
     KEY_BRIGHTNESS_CYCLE = 243,
     KEY_BRIGHTNESS_AUTO = 244,
+    KEY_BRIGHTNESS_ZERO = 244,
     KEY_DISPLAY_OFF = 245,
     KEY_WWAN = 246,
+    KEY_WIMAX = 246,
     KEY_RFKILL = 247,
     KEY_MICMUTE = 248,
     BTN_0 = 0x100,
@@ -288,6 +294,7 @@ evdev_enum!(
     BTN_FORWARD = 0x115,
     BTN_BACK = 0x116,
     BTN_TASK = 0x117,
+    BTN_JOYSTICK = 0x120,
     BTN_TRIGGER = 0x120,
     BTN_THUMB = 0x121,
     BTN_THUMB2 = 0x122,
@@ -301,11 +308,16 @@ evdev_enum!(
     BTN_BASE5 = 0x12a,
     BTN_BASE6 = 0x12b,
     BTN_DEAD = 0x12f,
+    BTN_GAMEPAD = 0x130,
     BTN_SOUTH = 0x130,
+    BTN_A = 0x130,
     BTN_EAST = 0x131,
+    BTN_B = 0x131,
     BTN_C = 0x132,
     BTN_NORTH = 0x133,
+    BTN_X = 0x133,
     BTN_WEST = 0x134,
+    BTN_Y = 0x134,
     BTN_Z = 0x135,
     BTN_TL = 0x136,
     BTN_TR = 0x137,
@@ -414,6 +426,7 @@ evdev_enum!(
     KEY_ADDRESSBOOK = 0x1ad,    /* AL Contacts/Address Book */
     KEY_MESSENGER = 0x1ae,      /* AL Instant Messaging */
     KEY_DISPLAYTOGGLE = 0x1af,  /* Turn display (LCD) on and off */
+    KEY_BRIGHTNESS_TOGGLE	 = 0x1af,  /* Turn display (LCD) on and off */
     KEY_SPELLCHECK = 0x1b0,     /* AL Spell Check */
     KEY_LOGOFF = 0x1b1,         /* AL Logoff */
     KEY_DOLLAR = 0x1b2,
